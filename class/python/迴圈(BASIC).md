@@ -59,6 +59,9 @@ for i in range(1,5):  #range總共跑4次
 ```
 
 <b>[output]</b>
+
+
+
 ![](https://i.imgur.com/rvQT4LM.png)
 
 
