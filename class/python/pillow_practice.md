@@ -13,6 +13,8 @@ im.rotate(45).show()
 ```
 
 <b>[output]</b>
+
+
 ![](https://i.imgur.com/caSJ8LU.png)
 
 
