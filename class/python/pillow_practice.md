@@ -41,3 +41,32 @@ im2.save('images_blur.jpg')
 
 -----
 
+
+* 縮放IMAGES
+
+```python
+#!/usr/bin/env python
+
+#coding=utf-8
+
+from PIL import Image
+# 打開一個jpg影像檔，注意是當前路徑:
+
+im = Image.open('../images.jpg')
+# 獲得圖像尺寸:
+w, h = im.size
+print('Original image size: %sx%s' % (w, h))
+
+# 縮放到50%:
+im.thumbnail((w//2, h//2))
+print('Resize image to: %sx%s' % (w//2, h//2))
+
+# 把縮放後的圖像用jpeg格式保存:
+im.save('view_thumb.jpg')
+```
+
+<b>[output]</b>
+
+![](https://i.imgur.com/VIXdA0D.png)
+
+![](https://i.imgur.com/hSDQH9h.png)
